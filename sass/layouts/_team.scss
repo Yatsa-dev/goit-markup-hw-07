@@ -14,14 +14,20 @@
   color: var(--title-text-color);
 }
 
-.team-block__item + .team-block__item {
-  margin-left: 30px;
-}
 .team-block__list {
   display: flex;
 }
 .team-blok__description {
   margin: 0;
+}
+.team-card {
+  display: flex;
+
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+
+  color: #afb1b8;
 }
 .team-block__item {
   width: 270px;
@@ -31,6 +37,9 @@
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--second-text-color);
+  & + .team-block__item {
+    margin-left: 30px;
+  }
 }
 .team-block__image {
   margin-bottom: 30px;
@@ -45,24 +54,6 @@
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
-}
-.team-card__link + .team-card__link {
-  margin-left: 10px;
-}
-.team-card__link:hover,
-.team-card__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-bg-color);
-  box-shadow: var(--shadow-litle);
-}
-.team-card {
-  display: flex;
-
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 30px;
-
-  color: #afb1b8;
 }
 
 .team-card__link {
@@ -80,6 +71,15 @@
 
   transition-property: fill, color;
   transition: 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-bg-color);
+    box-shadow: var(--shadow-litle);
+  }
+  & + .team-card__link {
+    margin-left: 10px;
+  }
 }
 .team-card__icon {
   display: flex;

@@ -7,11 +7,12 @@
 
   padding-bottom: 50px;
 }
-.primary-filter__item + .primary-filter__item {
-  margin-left: 8px;
-}
+
 .primary-filter__item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  & + .primary-filter__item {
+    margin-left: 8px;
+  }
 }
