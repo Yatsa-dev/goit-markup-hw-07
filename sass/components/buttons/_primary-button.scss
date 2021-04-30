@@ -18,9 +18,7 @@
   transition: 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
 }
-.primary-button:hover {
-  box-shadow: var(--shadow-big);
-  color: var(--second-text-color);
-  background-color: var(--accent-color);
+.primary-button:hover,
+.primary-button:focus {
   box-shadow: var(--shadow-big);
 }
